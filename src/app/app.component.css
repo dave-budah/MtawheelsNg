@@ -1,0 +1,67 @@
+.topbar-container {
+  background: var(--company-red-color);
+  transition: .3s;
+}
+.topbar {
+  color: #fff;
+}
+.topbar a:hover {
+  color: var(--defaut-text-color);
+}
+.topbar .search-group {
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 1px solid #fff;
+}
+.topbar .search-group input {
+  -moz-border-radius-topleft: 25px;
+  -moz-border-radius-bottomleft: 25px;
+  color: #fff;
+  border: none !important;
+}
+.topbar .search-group input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.topbar .search-group input::placeholder {
+  color: #fff;
+  opacity: .5;
+}
+.hide-topbar {
+  display: none;
+}
+/******* Navbar *******/
+.logo img {
+  width: 120px;
+}
+.navbar-nav .nav-item {
+  margin: auto 2rem;
+}
+.navbar-nav .nav-item .nav-link {
+  color: var(--defaut-text-color);
+  text-transform: uppercase;
+  font-size: .8rem;
+  display: inline-block;
+  position: relative;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.navbar-nav .nav-item .nav-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--company-red-color);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/******* End Navbar *******/
